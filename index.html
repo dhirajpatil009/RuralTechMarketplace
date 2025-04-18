@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Tech Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rural Digital Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#farmers">Farmers</a></li>
+                <li><a href="#marketing">Marketing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search products, farmers, or services..." onkeyup="searchProducts()">
+    </div>
+
+    <!-- Product Categories -->
+    <section id="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-container">
+            <div class="category-card" onclick="filterCategory('Grains')">Grains</div>
+            <div class="category-card" onclick="filterCategory('Vegetables')">Vegetables</div>
+            <div class="category-card" onclick="filterCategory('Fruits')">Fruits</div>
+            <div class="category-card" onclick="filterCategory('Pulses')">pulses</div>
+        </div>
+    </section>
+
+    <!-- Product Listings -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-container" id="product-list"></div>
+    </section>
+
+    <!-- Farmers & Farms Section -->
+    <section id="farmers">
+        <h2>Meet the Farmers</h2>
+        <div class="farmer-container">
+            <div class="farmer-card">
+                <img src="https://via.placeholder.com/250" alt="Farmer 1">
+                <h3>sunil patil</h3>
+                <p>Farmer | Talwade</p>
+                <button onclick="alert('Contacting Ramesh Kumar')">Contact</button>
+            </div>
+            <div class="farmer-card">
+                <img src="https://via.placeholder.com/250" alt="Farmer 2">
+                <h3>ratnabai patil</h3>
+                <p>Farmer | Talwade</p>
+                <button onclick="alert('Contacting Sunita Devi')">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Marketing Section -->
+    <section id="marketing">
+        <h2>Promote Your Business</h2>
+        <p>Are you a farmer or rural entrepreneur? List your products online and expand your business.</p>
+        <button onclick="alert('Get started with online marketing!')">Start Marketing</button>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rural Tech Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
